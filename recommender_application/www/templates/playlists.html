@@ -1,0 +1,53 @@
+<ion-view   view-title="Playlists">
+  <ion-content>
+
+
+  
+
+
+    <div class="list list-inset">
+      <label class="item item-input">
+        <i class="icon ion-search placeholder-icon"></i>
+        <input type="text" placeholder="Search" ng-model="ara">
+      </label>
+    </div>
+
+
+    <div class="list">
+
+      <a class="item item-thumbnail-left" href="#">
+        <img src="cover.jpg">
+        <h2>Pretty Hate Machine</h2>
+        <p>Nine Inch Nails</p>
+      </a>
+  
+      
+  
+  </div>
+  
+    <div class="list">
+
+
+
+
+
+      <div class="item item-divider">
+        Categories
+        
+      </div>
+
+      <a class="item" ng-repeat= "category in categories" href="#/app/playlists/{{category.id}}">
+        {{category.title}} 
+      </a>
+
+
+
+
+
+    
+    
+    </div>
+
+
+  </ion-content>
+</ion-view>
